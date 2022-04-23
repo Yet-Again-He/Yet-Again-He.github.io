@@ -1,4 +1,4 @@
 # Yet-Again-He.github.io
 
-This is an attempt at hosting the Adûnaic Lexicon I am developing online,
-for easier usage and reference for people when asking specific questions.
+This is an attempt at hosting online the Adûnaic Lexicon I am developing,
+for easier usage and reference when people are asking specific questions.
