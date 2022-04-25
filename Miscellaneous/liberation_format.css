@@ -1,7 +1,35 @@
+
+
 @font-face {
-    font-family: LiberationSerif;
-    src: url(LiberationSerif/LiberationSerif-Regular.ttf);
-}
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Liberation Serif'), url('LiberationSerif-Regular.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Liberation Serif Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Liberation Serif Italic'), url('LiberationSerif-Italic.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Liberation Serif Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Liberation Serif Bold'), url('LiberationSerif-Bold.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Liberation Serif Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Liberation Serif Bold Italic'), url('LiberationSerif-BoldItalic.woff') format('woff');
+    }
 
 h1 {
 	color: black;
