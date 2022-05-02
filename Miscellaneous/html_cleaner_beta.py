@@ -53,7 +53,8 @@ working_directory = os.getcwd()
 # Calculate total number of files
 for root, dirs, files in os.walk(directory):
     for file in files:
-        TOTAL += 1
+        if file[-4:] == ".htm":  # MAKE SURE TO TEST THIS!
+            TOTAL += 1
 
 # Walk and clean chosen directory
 for root, dirs, files in os.walk(directory):
