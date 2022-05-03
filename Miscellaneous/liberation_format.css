@@ -88,3 +88,11 @@ ul {
 	font-size: 14.0pt;
 	font-size: normal;
 }
+
+ul.a {
+	list-style-type: circle;
+	color: black;
+	font-family: 'Liberation Serif',serif;
+	font-size: 14.0pt;
+	font-size: normal;
+}
