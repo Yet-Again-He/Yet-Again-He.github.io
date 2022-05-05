@@ -40,6 +40,22 @@ def re_sub(test_string, current_path, working_directory, filename):
     new_string = new_string.replace('<head>', css_link)
     # Remove unneeded newlines
     new_string = new_string.replace("\n\n\n", "")
+
+    # Add newlines as needed now.
+    new_string = new_string.replace("<title>", "\n<title>", 1)
+    new_string = new_string.replace("<link>", "\n<link>", 2)
+    new_string = new_string.replace("</head>", "\n<head>", 1)
+    new_string = new_string.replace("</head><p>", "</head>\n\n<p>", 1)
+    new_string = new_string.replace("<hr", "\n<hr")
+    new_string = new_string.replace("align=center>", "align=center>\n")
+    new_string = new_string.replace("\n\n ", "")
+    new_string = new_string.replace("<p>&nbsp;</p></html>", "\n</html>")
+    new_string = new_string.replace("<p><i>&nbsp;</i></p></html>", "\n</html>")
+    new_string = new_string.replace("<p><b>&nbsp;</b></p></html>", "\n</html>")
+    new_string = new_string.replace("<p>&nbsp;</p>\n<p>&nbsp;</p>", "<p>&nbsp;</p>")
+
+
+    # Insure all links are there.
     new_string = add_gender(new_string, current_path)
 
     return new_string
@@ -105,22 +121,23 @@ def add_gender(old_string: str, current_path):
 
     
     # Now check and fix noun type links
-    if "Strong-I" in new_string:
-        if "Strong-I</a>" not in new_string:
-            new_string = new_string.replace("Strong-I", strong_link + "Strong-I" + "</a>", 1)
-            print("Successful fix for Noun Type hyperlink!")
-    elif "Strong-II" in new_string:
+    if "Strong-II" in new_string:
         if "Strong-II</a>" not in new_string:
             new_string = new_string.replace("Strong-II", strong_link + "Strong-II" + "</a>", 1)
             print("Successful fix for Noun Type hyperlink!")
-    elif "Weak-I" in new_string:
-        if "Weak-I</a>" not in new_string:
-            new_string = new_string.replace("Weak-I", strong_link + "Weak-I" + "</a>", 1)
+    elif "Strong-I" in new_string:
+        if "Strong-I</a>" not in new_string and "Strong-II</a>" not in new_string:
+            new_string = new_string.replace("Strong-I", strong_link + "Strong-I" + "</a>", 1)
             print("Successful fix for Noun Type hyperlink!")
     elif "Weak-II" in new_string:
         if "Weak-II</a>" not in new_string:
             new_string = new_string.replace("Weak-II", strong_link + "Weak-II" + "</a>", 1)
             print("Successful fix for Noun Type hyperlink!")
+    elif "Weak-I" in new_string:
+        if "Weak-I</a>" not in new_string and "Weak-II</a>" not in new_string:
+            new_string = new_string.replace("Weak-I", strong_link + "Weak-I" + "</a>", 1)
+            print("Successful fix for Noun Type hyperlink!")
+    
     print()
 
     return new_string
