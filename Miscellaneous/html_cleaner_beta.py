@@ -48,7 +48,7 @@ def re_sub(test_string, current_path, working_directory, filename):
     new_string = new_string.replace("</head><p>", "</head>\n\n<p>", 1)
     new_string = new_string.replace("<hr", "\n<hr")
     new_string = new_string.replace("align=center>", "align=center>\n")
-    new_string = new_string.replace("\n\n ", "")
+    #new_string = new_string.replace("\n\n ", "")
     new_string = new_string.replace("<p>&nbsp;</p></html>", "\n</html>")
     new_string = new_string.replace("<p><i>&nbsp;</i></p></html>", "\n</html>")
     new_string = new_string.replace("<p><b>&nbsp;</b></p></html>", "\n</html>")
