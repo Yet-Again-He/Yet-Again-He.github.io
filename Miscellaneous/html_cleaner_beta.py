@@ -197,3 +197,6 @@ for root, dirs, files in os.walk(directory):
             print(str(PARTIAL) + "/" + str(TOTAL) + " completed!")
         else:
             next
+
+print()
+input("Hit enter to continue...")
