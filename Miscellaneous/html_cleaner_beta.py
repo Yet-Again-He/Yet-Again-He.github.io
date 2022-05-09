@@ -56,7 +56,7 @@ def re_sub(test_string, current_path, working_directory, filename):
 
 
     # Insure all links are there.
-    new_string = add_gender(new_string, current_path)
+    # new_string = add_gender(new_string, current_path)
 
     return new_string
 
