@@ -1,0 +1,12 @@
+Always create placeholder files for links if you cannot put all the links in ASAP.
+
+[ɣ] is just a [g] as in "guh" but you let some air through.
+
+Maybe make a udemy course based on this when it has reached critical mass?  Dunno.
+
+
+
+With page maker, open up and read through words.htm, search through words until you
+reach a word that is higher, then search from there for the nearest <p> and </P>, then
+one line down write in new word using info for an html paragraph from a txt file, then
+input it back in, save and close.
