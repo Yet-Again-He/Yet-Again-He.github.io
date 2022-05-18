@@ -26,7 +26,6 @@ def re_sub(test_string, current_path, working_directory, filename):
     meta = re.sub("(<meta [^>]+>)", "", tear)
     style = re.sub("(<style>[^>]+>)", "", meta)
     body = re.sub("(<body [^>]+>)", "", style)
-    #ula = re.sub('(·&nbsp;[^\n]+\n)', '<ul class="a">')
     new_string = body.replace("</div>", "")
     new_string = new_string.replace("</span>", "")
     new_string = new_string.replace("</div>", "")
@@ -152,6 +151,9 @@ def add_title(old_string: str, filename):
 
 
 def add_bullet(old_string):
+    # Find nearest aspect of string that has <p>...·&nbsp; in it, then replace it with <ul>.  
+    re.sub('(<p>·&nbsp;[^<]+<)', '<ul>\n<p><li><', new_string)
+    # Once done, take everything between <ul> and </ul> and loop through it until all the bullets are added.
     pre_ula = "<ul>"
     post_ula = "</ul>"
     # Adding bullets
