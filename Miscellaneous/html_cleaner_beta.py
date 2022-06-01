@@ -155,9 +155,14 @@ def add_bullet(old_string):
     re.sub('(<p>·&nbsp;[^<]+<)', '<ul>\n<p><li><', new_string)
     # Once done, take everything between <ul> and </ul> and loop through it until all the bullets are added.
     pre_ula = "<ul>"
-    post_ula = "</ul>"
+    end_tag = "</ul>"
     # Adding bullets
-    ula = re.sub("(·[^<]+)", "<ul>", old_string)  # Use loop with index starting here to locate where to place </ul>
+    ula = re.sub("(·[^<]+)", "<li>", old_string)  # Use loop with index starting here to locate where to place </ul>
+    # Figuring out where to add </ul>
+    if re.findall("(<li>[^</li>])</p>") == True: # Obviously that regex needs polishing, just a placeholder atm.
+        asdf = ""
+    else:
+        new_string = re.sub("</li></p>", "</li></p>\n</ul>") # Now how to get this to only do it to the last one only...
 
 
 # Acquire directory path
