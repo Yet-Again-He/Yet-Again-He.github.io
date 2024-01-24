@@ -2,7 +2,6 @@
 
 Noun (folder):
 singular_nouns
-collective_nouns
 
 Getting Started (Folder):
 historical_development
