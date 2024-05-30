@@ -1,0 +1,48 @@
+words:
+√GALAB "game"
+[pure triliteral, therefore we have the threefold pattern of basic derivations]
+galba "marble"
+galab "game"
+aglab "gamepiece"
+
+√ZID "stand"
+zid- "to narrow, straighten, stand up" (archaic past tense zinda)
+zidar "poise" [attested, just fits into this root]
+√ZINID "truth, (orig.) narrowness, straightness" [fossilized nasal infixion]
+zindi "truth, i.e. true statement/fact" [attested]
+zinid "Truth, the logical concept of truth itself" [in the lexicon as "all-truth"]
+iznid "tenet, axiom, principle"
+zinduthâni "philosophy" (lit. "the domain of truth")
+
+√ZAG "win"
+zag- "to win, defeat"
+azâg "victory"*
+√ZAGAR "sword, war" [-R root extension, meaning: "causative"] and derivatives
+√PHAZAG "conquer" [PH- root extension, meaning: "complete, fully"] and derivatives
+√NAZAG "enslave" [N- root extension, meaning: "person"]
+nazgâ (-û, -î) "slave"**
+anzagâ- "to enslave"
+
+√RID "follow, second"
+rid- "to follow"
+rêda "heir" [attested, in Beorian]
+ridi "second"***
+ridân "Man, i.e. Atan"
+
+√ʔIƷ "spatial/temporal indicator" (likely related to Elvish √EŊ)
+-î "derived adjective"****
+whence -iyê (feminized nominal form, probably influenced by Quenya -ië as well)
+
+roots:
+
+√ZIG "wish, will" (back-derived from √ZIGIR "magic", taking it as "the realization of one's will")
+
+√ƷAR "high, royal" (chosen over √ʔAR due to Elvish + double long vowels in ârâ)
+
+√LIR "free" (from Elvish √LER)
+
+√ʔUR "to be hot, bright" (from ûri; note √ZUR "fire" could be a root extension)
+
+√ʔASAD (or possibly √SID*****) "fill"
+
+√GARAD "region, area" (extracted from Rohirian Lōgrad "Riddermark", presumably derived from Sindarin gardh) 
